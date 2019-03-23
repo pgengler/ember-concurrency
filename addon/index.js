@@ -10,7 +10,7 @@ import { resolveScheduler } from './-property-modifiers-mixin';
 import { gte } from 'ember-compatibility-helpers';
 
 function _computed(fn) {
-  if (gte('3.10.0')) {
+  if (gte('3.10.0-canary')) {
     let cp = function(proto, key) {
       if (cp.setup !== undefined) {
         cp.setup(proto, key);

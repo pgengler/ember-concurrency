@@ -417,7 +417,7 @@ export const Task = EmberObject.extend(TaskStateMixin, {
 */
 export let TaskProperty;
 
-if (gte('3.10.0')) {
+if (gte('3.10.0-canary')) {
   TaskProperty = class {};
 } else {
   // Prior to the 3.10.0 refactors, we had to extend the _ComputedProprety class
